@@ -14,7 +14,7 @@ st.set_page_config(
 	layout="wide"
 )
 
-pipe = pipeline(task="zero-shot-classification", model="facebook/bart-large-mnli")
+pipe = pipeline(task="zero-shot-classification", model="valhalla/distilbart-mnli-12-3")
 model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
 dire = "DS_NLP_search_data"
@@ -92,8 +92,10 @@ def sort_by_similarity(search_str, related_offers):
 
 	for offer in list(related_offers["OFFER"]):
 		embedding_2 = model.encode(offer, convert_to_tensor=True)
+		score = float(util.pytorch_cos_sim(embedding_1, embedding_2))
 
-		temp_dict[offer] = float(util.pytorch_cos_sim(embedding_1, embedding_2))
+		if score > 0:
+			temp_dict[offer] = score
 
 	sorted_dict = dict(sorted(temp_dict.items(), key=lambda x : x[1], reverse=True))
 	# casted_scores = list(map(lambda x : int(x), ))
@@ -102,18 +104,22 @@ def sort_by_similarity(search_str, related_offers):
 
 def main():
 	col_1, col_2, col_3 = st.columns(3)
-	search_str = col_2.text_input("Enter a retailer, brand, or category").capitalize()
+	search_str = col_1.text_input("Enter a retailer, brand, or category").capitalize()
 	processed_offers = get_processed_offers()
 	cats = get_categories_data()
 	offer_rets = get_offers_data()
 	categories = get_categories(cats)
 	# retail_mapping = get_prod_categories()
 
-	if col_2.button("Search", type="primary"):
+	if col_1.button("Search", type="primary"):
 		retail = is_retailer(search_str)
 		direct_offers = check_in_offer(search_str, offer_rets)
 		col_2.write("Directly related offers")
-		col_2.table(direct_offers)
+
+		if len(direct_offers) == 0:
+			col_2.write("Nothing found")
+		else:
+			col_2.table(direct_offers)
 
 		if retail:
 			related_offers = offer_rets[~offer_rets["OFFER"].isin(list(direct_offers["OFFER"]))]
@@ -121,7 +127,9 @@ def main():
 			related_offers, labels_1, labels_2 = perform_cat_inference(search_str, categories, cats, processed_offers) 
 			related_offers = related_offers[~related_offers["OFFER"].isin(list(direct_offers["OFFER"]))]
 
+			col_2.write("Most related parent categories")
 			col_2.table(pd.DataFrame({"labels": labels_1["labels"][:5], "scores": labels_1["scores"][:5]}))
+			col_2.write("Most related child categories")
 			col_2.table(pd.DataFrame({"labels": labels_2["labels"][:5], "scores": labels_2["scores"][:5]}))
 
 
@@ -130,7 +138,12 @@ def main():
 		
 		col_2.write("Other related offers")
 		sorted_offers = sort_by_similarity(search_str, related_offers)
-		col_2.table(sorted_offers)
+
+		if len(sorted_offers) == 0:
+			col_2.write("Nothing found")
+		else:
+			col_2.table(sorted_offers)
+
 if __name__ == "__main__":
 
 	main()
