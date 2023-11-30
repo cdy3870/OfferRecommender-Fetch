@@ -1,0 +1,283 @@
+index,OFFER,CATEGORY
+0,"Beyond Meat® Plant-Based products, spend $25",{'Plant-Based Meat'}
+1,"Beyond Steak™ Plant-Based seared tips, 10 ounce at Target",{'Plant-Based Meat'}
+2,"Beyond Steak™ Plant-Based seared tips, 10 ounce, buy 2 at H-E-B",{'Plant-Based Meat'}
+3,"Beyond Steak™ Plant-Based seared tips, 10 ounce at H-E-B",{'Plant-Based Meat'}
+4,"Beyond Steak™ Plant-Based seared tips, 10 ounce, buy 2 at Target",{'Plant-Based Meat'}
+5,"Beyond Meat® Plant-Based products, spend $15",{'Plant-Based Meat'}
+6,"Beyond Meat® Plant-Based products, spend $20",{'Plant-Based Meat'}
+7,Good Humor Viennetta Frozen Vanilla Cake,{'Frozen Desserts'}
+8,"Reese's Peanut Butter Bar, 6 count, at GIANT OR MARTIN’S",{'Frozen Desserts'}
+9,"Butterball, select varieties, spend $10 at Dillons Food Store",{'Nut Butters & Jam'}
+10,"Butterball, select varieties, spend $10 at Ralphs",{'Nut Butters & Jam'}
+11,"Butterball, select varieties, Spend $10 at Ruler Foods",{'Nut Butters & Jam'}
+12,"Butterball, select varieties, spend $10 at King Soopers",{'Nut Butters & Jam'}
+13,"Butterball, select varieties, spend $10 at Fred Meyer",{'Nut Butters & Jam'}
+14,"Butterball, select varieties, spend $10 at Kroger",{'Nut Butters & Jam'}
+15,"Butterball, select varieties, spend $10 at Smith's",{'Nut Butters & Jam'}
+16,"Butterball, select varieties, spend $10 at Food 4 Less",{'Nut Butters & Jam'}
+17,"Butterball, select varieties, spend $10 at Fry's Food Store",{'Nut Butters & Jam'}
+18,"Butterball, select varieties, spend $10 at QFC",{'Nut Butters & Jam'}
+19,"Butterball, select varieties, spend $10 at Mariano's",{'Nut Butters & Jam'}
+20,"Butterball, select varieties, spend $10 at Pick 'n Save OR Metro Market",{'Nut Butters & Jam'}
+21,"GATORADE® Fast Twitch®, 12-ounce 12 pack, at Amazon Storefront*",{'Sports Drinks'}
+22,"GATORLYTE® OR GATORADE™ Fit Single Serve Bottle, select varieties, buy 2",{'Sports Drinks'}
+23,"GATORADE® Fast Twitch®, 12-ounce single serve, buy 2 at Kroger",{'Meal Replacement Beverages'}
+24,"GATORADE® Fast Twitch®, 12-ounce single serve",{'Meal Replacement Beverages'}
+25,"GATORADE® Fast Twitch®, 12-ounce single serve, at Kroger",{'Meal Replacement Beverages'}
+26,"GATORLYTE® OR GATORADE™ Fit Single Serve Bottle, select varieties",{'Sports Drinks'}
+27,Emmy's Organics® Cookies OR Brownie Snaps,{'Cookies'}
+28,"Dr Pepper®, Regular OR Zero Sugar Strawberries and Cream 12 pack, at select retailers",{'Carbonated Soft Drinks'}
+29,"Arnold, Brownberry, Oroweat® Small Slice bread, at Walmart",{'Bread'}
+30,"Arnold, Brownberry, Oroweat® Keto bread, buy 2",{'Bread'}
+31,Arnold® Grains Almighty,{'Prepared Meals'}
+32,Barilla® Pesto Sauce,{'Pesto Sauce'}
+33,"Barilla® Pasta, select varieties, buy 2",{'Red Pasta Sauce'}
+34,"Barilla® pasta, select varieties, buy 3",{'Red Pasta Sauce'}
+35,"Barilla® pasta, select varieties, buy 4",{'Red Pasta Sauce'}
+36,"Barilla® pasta, select varieties, buy 2",{'Red Pasta Sauce'}
+37,"Any General Mills™ products, buy 2
+Good Rewards Members Only","{'Cereal, Granola, & Toaster Pastries'}"
+38,"General Mills™ products, select brands, spend $35",{'Refrigerated Doughs'}
+39,"General Mills™ products, select brands, spend $7 at Convenience Stores",{'Refrigerated Doughs'}
+40,"General Mills™ products, select varieties, spend $12",{'Refrigerated Doughs'}
+41,Egglife Egg White Wraps at Aldi,{'Eggs'}
+42,"DOVE® Chocolate, select sizes, buy 1",{'Candy'}
+43,"DOVE® chocolate, select varieties",{'Candy'}
+44,Hellmann's® OR Best Foods® Garlic Aioli OR Spicy Mayonnaise,{'Condiments'}
+45,Hellmann's® OR Best Foods® AND Sargento® Cheese Slices,{'Condiments'}
+46,Hellmann's | Best Foods Vegan Dressing or Spread,{'Dressings'}
+47,"M&M'S®, select sizes, buy 1",{'Candy'}
+48,"M&M'S® chocolate candies, select varieties",{'Candy'}
+49,Red Gold Tomato Ketchup,{'Condiments'}
+50,Red Gold Tomato Juice,{'Drink Mixes'}
+51,Gillette Venus ® for Pubic Hair & Skin spend $20,{'Hair Removal'}
+52,Gillette Venus ® for Pubic Hair & Skin,{'Hair Removal'}
+53,"Gillette Venus ® for Pubic Hair & Skin, spend $20",{'Hair Removal'}
+54,"L'Oréal Paris Hair color, select varieties, spend $19 at Target",{'Hair Care'}
+55,"L'Oréal Paris Men Expert hair color, spend $19 at Walmart",{'Hair Care'}
+56,"L’Oréal Paris Men Expert hair color, spend $9 at Walmart",{'Hair Care'}
+57,L'Oréal Paris Excellence Hair Color at Target,{'Hair Care'}
+58,"L'Oréal Paris Hair color, select varieties, spend $25 at Target",{'Hair Care'}
+59,"L'Oréal Paris Hair color, select varieties, spend $9 at Target",{'Hair Care'}
+60,Simply Spiked™ Lemonade 12 pack+,"{'Hard Seltzers, Sodas, Waters, Lemonades & Teas'}"
+61,"Simply Spiked™ Signature Peach 12-pack or larger, buy 2",{'Malt Beverages'}
+62,Simply Spiked™ 12 pack+,"{'Hard Seltzers, Sodas, Waters, Lemonades & Teas'}"
+63,Simply Spiked™ Signature Peach 12 pack+,{'Malt Beverages'}
+64,"Gorton's, at select retailers",{'Frozen Meals'}
+65,"Gorton's Air Fried Butterfly Shrimp, at Walmart",{'Frozen Seafood'}
+66,Gorton's at select retailers,{'Frozen Meals'}
+67,"Flonase Allergy Relief, at Walmart",{'Medicines & Treatments'}
+68,"CESAR® Wet Dog Food, spend $20",{'Dog Supplies'}
+69,CESAR® Wet Dog Food Singles,{'Dog Supplies'}
+70,"TWIX®, select sizes",{'Candy'}
+71,"TWIX®, select varieties",{'Candy'}
+72,"Hidden Valley® Ranch Salad Dressing OR Secret Sauce, select varieties",{'Sauces & Marinades'}
+73,"Hidden Valley® Ranch Seasoning Mix Packet, 1 count",{'Sauces & Marinades'}
+74,"Hidden Valley® Ranch Seasoning, select varieties",{'Sauces & Marinades'}
+75,Hidden Valley® Ranch Seasoning Shaker,{'Sauces & Marinades'}
+76,"Hidden Valley® Ranch Night Seasoning Mix, 1 count",{'Cooking & Baking'}
+77,"Cooked Perfect® Meatballs, at Walmart",{'Frozen Chicken'}
+78,"Cooked Perfect® Meatballs, Homestyle OR Turkey, at Walmart",{'Frozen Chicken'}
+79,"Perfect Keto Barista Blend Collagen & MCTs, online at Amazon",{'Medicines & Treatments'}
+80,"Perfect Keto Beauty + Sleep Collagen, online at Amazon",{'Medicines & Treatments'}
+81,"Perfect Keto Bars, online at Amazon",{'Nuts & Seeds'}
+82,"Perfect Keto Collagen Peptides, online at Amazon",{'Medicines & Treatments'}
+83,"Perfect Keto MCT Oil Powder, online at Amazon",{'Medicines & Treatments'}
+84,"Perfect Keto Super Reds, online at Amazon",{'Medicines & Treatments'}
+85,"Perfect Keto Exogenous Ketones Powder, online at Amazon",{'Medicines & Treatments'}
+86,"Crunchmaster® Crackers, spend $4",{'Crackers'}
+87,"Tyson Products, select varieties, spend $20 at Sam's Club",{'Packaged Meat'}
+88,"L'Oréal Paris Makeup, spend $35 at Target",{'Makeup'}
+89,"L'Oréal Paris Makeup, spend $30 at Target",{'Makeup'}
+90,L'Oreal Paris True Match Foundation at Target,{'Makeup'}
+91,L'Oréal Paris True Match Foundation at Target,{'Makeup'}
+92,"Chosen Foods® Mayo, select varieties",{'Condiments'}
+93,Chosen Foods® Dressings,{'Dressings'}
+94,"Wine from TheBarrelRoom.com, spend $30",{'Wine'}
+95,"PepsiCo® Beverage, 7.5-ounce 10 pack, select varieties, at Amazon Storefront*",{'Carbonated Soft Drinks'}
+96,"PepsiCo® Variety Pack, select varieties, at Amazon Storefront*",{'Carbonated Soft Drinks'}
+97,"Sara Lee® bread, select varieties, buy 2 at Walmart®",{'Bread'}
+98,"Sara Lee® bread select varieties, buy 2",{'Bread'}
+99,"Sara Lee® Delightful bread, buy 2",{'Bread'}
+100,"Sara Lee® or Alfaros® Artesano bread, buy 5",{'Bread'}
+101,"Sara Lee® or Alfaros® Artesano bread, spend $8",{'Bread'}
+102,"Sara Lee® or Alfaros® Artesano bread, buy 2",{'Bread'}
+103,"Sara Lee® or Alfaros® Artesano bread, spend $20",{'Bread'}
+104,"Bai® Antioxidant, 6 pack, buy 2 at Walmart",{'Drink Mixes'}
+105,"Bai® Antioxidant, 6 pack, at Walmart",{'Drink Mixes'}
+106,"Reese's Chocolate Cones, 8 count at GIANT OR MARTIN’S",{'Frozen Desserts'}
+107,"Klondike Cones, spend $10 at Walmart ",{'Frozen Desserts'}
+108,Klondike Cones at Walmart ,{'Frozen Desserts'}
+109,"Back to the Roots Grow Seed Starting Pots OR Germination Trays, at Walmart or Target",{'Packaged Meals & Sides'}
+110,"Back to the Roots Soils, select varieties and sizes, at Walmart",{'Packaged Meals & Sides'}
+111,"Back to the Roots Dry Plant Food, 5 pounds, at The Home Depot",{'Packaged Meals & Sides'}
+112,"Back to the Roots Garden Soil, 1 cubic foot, at Lowe's Home Improvement",{'Packaged Meals & Sides'}
+113,"Back to the Roots Raised Bed Gardening Kit with Soil, Seeds and Plant Food, at Target",{'Packaged Meals & Sides'}
+114,Back to the Roots Microgreens Grow Kit OR Seed Refill at Walmart,{'Packaged Meals & Sides'}
+115,"Back to the Roots Soils, select varieties and sizes, at Lowes",{'Packaged Meals & Sides'}
+116,"Back to the Roots Soils, select varieties, at Walmart or Lowes",{'Packaged Meals & Sides'}
+117,Back to the Roots Grow Kits at Walmart or The Home Depot,{'Packaged Meals & Sides'}
+118,Back to the Roots Grow Hydroponic Grow Kit OR Refill Bundle at Walmart,{'Packaged Meals & Sides'}
+119,"Back to the Roots Seeds, at Walmart",{'Packaged Meals & Sides'}
+120,"Back to the Roots Organic Kits and Planters, at Target",{'Packaged Meals & Sides'}
+121,"Back to the Roots Potting Mix, 1 cubic foot, at Lowe's Home Improvement",{'Packaged Meals & Sides'}
+122,"Back to the Roots Organic 3-In-1 Seed Starting Mix 12 quart, at Walmart or Target",{'Packaged Meals & Sides'}
+123,"Back to the Roots Soils, select varieties, at Walmart",{'Packaged Meals & Sides'}
+124,"Dove Hand Wash, select varieties, buy 2 at Target",{'Bath & Body'}
+125,"Dove Hand Wash, select varieties at Target",{'Bath & Body'}
+126,"Frutero Ice Cream, 1 pint",{'Frozen Desserts'}
+127,"Bio-Oil® Skincare Oil OR Gel, select varieties",{'Skin Care'}
+128,"Bio-Oil® products, select varieties",{'Skin Care'}
+129,"Welch's®Fruit Snacks, select varieties, buy 2",{'Fruit & Vegetable Snacks'}
+130,"Welch's® Zero Sugar Fruity Bites, 6 pack+, online at Amazon",{'Fruit & Vegetable Snacks'}
+131,"Welch's® Fruit Snacks, select varieties, 6 count+, buy 3",{'Fruit & Vegetable Snacks'}
+132,"Welch's® Fruit Snacks, 250 count, online at Amazon",{'Fruit & Vegetable Snacks'}
+133,"Welch's® Juicefuls® Juicy Fruit Snacks, 14 count, at Target",{'Fruit & Vegetable Snacks'}
+134,"Welch's® Fruit Snacks, select varieties, 6 count+, buy 2",{'Fruit & Vegetable Snacks'}
+135,"Welch's®Fruit Snacks, spend $8",{'Fruit & Vegetable Snacks'}
+136,"Welch's® Fruit 'n Yogurt® Snacks, 18 count, at Walmart",{'Fruit & Vegetable Snacks'}
+137,"Welch's® Fruit Snacks, select varieties, 6 count+",{'Fruit & Vegetable Snacks'}
+138,"Welch's® Juicefuls® Juicy Fruit Snacks, buy 2",{'Fruit & Vegetable Snacks'}
+139,Talenti Mini Bars,{'Frozen Desserts'}
+140,"Molson Coors®, select varieties, 12 pack+",{'Beer'}
+141,"Marinela® sweet baked goods, buy 2",{'Cookies'}
+142,"Coors Light®, Miller Lite® OR VIZZY™ 12 pack+",{'Malt Beverages'}
+143,"Coors Light®, Miller Lite® OR VIZZY™ 12 packs+, buy 4",{'Malt Beverages'}
+144,"Coors Light®, Miller Lite® OR VIZZY™ 12 packs+, buy 2",{'Malt Beverages'}
+145,"Coors Light®, Miller Lite® OR VIZZY™ 12 packs+, buy 3",{'Malt Beverages'}
+146,"Coors Light®, Miller Lite® OR VIZZY™ 12 packs+, buy 5",{'Malt Beverages'}
+147,Little Bites® Spend $10 at Walmart®,{'Snack Cakes'}
+148,Envy Apples pre-packed bags,{'Candy'}
+149,"Envy Apples, pre-packed bags",{'Candy'}
+150,"Ben & Jerry's Frozen Creme Brulee Non Dairy Dessert, 16 ounce",{'Frozen Desserts'}
+151,"Ben & Jerry's® Doggie Desserts, 4 count",{'Frozen Desserts'}
+152,"Ben & Jerry's Frozen Sugar Cookie Dough Chunks, 8 ounce",{'Frozen Desserts'}
+153,"Ben & Jerry's®, select varieties",{'Frozen Desserts'}
+154,"Ben & Jerry's®, select varieties, spend $12",{'Frozen Desserts'}
+155,"Ben & Jerry's® Doggie Desserts, 4 ounce, buy 2",{'Frozen Desserts'}
+156,"Ben & Jerry's Wake & No Bake Cookie Dough Ice Cream, 16 ounce",{'Frozen Desserts'}
+157,Ben & Jerry's® Churray For Churros™ Ice Cream,{'Frozen Desserts'}
+158,"Purex® laundry detergent, select varieties, at Walmart",{'Laundry Supplies'}
+159,Sol® 6 pack+,{'Beer'}
+160,"Michael Angelo's® OR Rao's® Frozen Entrees, spend $10",{'Frozen Meals'}
+161,Rao's® Frozen Pizza,{'Frozen Meals'}
+162,"Rao's®, Pasta OR Sauce, spend $10",{'Dry Pasta'}
+163,"Sargento Sliced Cheese, spend $25",{'Cheese'}
+164,"Sargento Sliced Cheese, spend $12",{'Cheese'}
+165,"Sargento® products, select varieties",{'Cheese'}
+166,"Sargento® products, select varieties, buy 3",{'Cheese'}
+167,"Sargento Sliced Cheese, spend $18",{'Cheese'}
+168,Sargento Product,{'Cheese'}
+169,Country Crock® Plant Based Butter at Walmart,{'Nut Butters & Jam'}
+170,Country Crock® Plant Based Cream at Walmart,{'Nut Butters & Jam'}
+171,AleveX™ at Walmart,{'Medicines & Treatments'}
+172,"Aleve® products, select varieties, 80 count+ at Walmart",{'Medicines & Treatments'}
+173,"Aleve® products AND AleveX™, select varieties, at Walmart",{'Medicines & Treatments'}
+174,"Magnum Non-Dairy Hazelnut Crunch Ice Cream Bars, 3 count",{'Frozen Desserts'}
+175,"Thomas'® Bagel Thins®, buy 2",{'Bakery'}
+176,"Thomas'®, select varieties, spend $10",{'Bakery'}
+177,Thomas'® Bagel Thins,{'Bakery'}
+178,"Artesano® buns, buy 2 at Walmart®",{'Bread'}
+179,"STARBURST®, select sizes, buy 1",{'Fruit & Vegetable Snacks'}
+180,"STARBURST®, select varieties",{'Fruit & Vegetable Snacks'}
+181,Fresh Step® Outstretch® Cat Litter,{'Hair Care'}
+182,"Burt's Bees Sensitive Lotions and Creams, select varieties, at Walmart",{'Skin Care'}
+183,"Burt's Bee's® Facial Wipes, select varieties, 30 count at Walmart",{'Skin Care'}
+184,"Burt's Bees® products, select varieties, at Walmart",{'Skin Care'}
+185,"Burt's Bees® Sensitive Lotions and Creams, select varieties, at Walmart",{'Skin Care'}
+186,"Durex® Massage & Play 2 in 1 Pleasure Gel, select varieties, at Walmart or Target",{'Sexual Health'}
+187,LIFE SAVERS®,{'Candy'}
+188,"LIFESAVERS®, any size, buy 1",{'Candy'}
+189,"RESPAWN® by 5® GUM, at Walmart",{'Gum'}
+190,Wesson® Oil Products,{'Cooking & Baking'}
+191,"Bubbies Pickles, Sauerkraut, and Condiments at Whole Foods or Sprouts",{'Prepared Meals'}
+192,"Bubbies Pickles, Sauerkraut, OR Condiments at Whole Foods or Sprouts",{'Prepared Meals'}
+193,Michael Angelo's® Sauce at Walmart,{'Sauces & Marinades'}
+194,"Beech-Nut snacks, select varieties",{'Nuts & Seeds'}
+195,"Beech-Nut pouches, buy 8",{'Fruit & Vegetable Snacks'}
+196,Brita® Pitcher AND Filter,{'Household Supplies'}
+197,Brita® Standard OR Elite Filters,{'Household Supplies'}
+198,Brita® Pitcher OR Dispenser,{'Household Supplies'}
+199,"SNICKERS®, select sizes, buy 1",{'Candy'}
+200,"SNICKERS® chocolate candy bar, select varieties",{'Candy'}
+201,"Kodiak® products, select varieties, spend $10","{'Cereal, Granola, & Toaster Pastries'}"
+202,Bays® English Muffins,{'Bread'}
+203,"Super Coffee, 12 ounce single serve, buy 3",{'Coffee'}
+204,"Super Coffee, 12 ounce single serve",{'Coffee'}
+205,GOYA® Coconut Water,{'Water'}
+0,Spend $10 at Subway,{'Cooking & Baking'}
+1,Spend $25 at Subway,{'Cooking & Baking'}
+2,Spend $15 at Subway,{'Cooking & Baking'}
+3,Spend $35 at Subway,{'Cooking & Baking'}
+4,Spend $140 at Shaws,{'Cooking & Baking'}
+5,Spend $185 at Shaws,{'Cooking & Baking'}
+6,Shop 2 times at Shaw's,{'Cooking & Baking'}
+7,Any Shaw's receipt,{'Cooking & Baking'}
+8,Spend $300 at Shaws,{'Cooking & Baking'}
+9,Shop 2 times at ACME,{'Medicines & Treatments'}
+10,Spend $90 at ACME,{'Medicines & Treatments'}
+11,Spend $250 at ACME,{'Medicines & Treatments'}
+12,Any ACME receipt,{'Medicines & Treatments'}
+13,Spend $130 at ACME,{'Medicines & Treatments'}
+14,Order from Casey's app or Caseys.com,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+15,Spend $25 at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+16,Spend $5 in-store at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+17,Select beverages AND prepared food items at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+18,Visit OR order online from Casey's 7 times,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+19,Spend $5 on single-serve prepared food items at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+20,12 Pack OR 2 Liter AND Whole Pizza Pie at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+21,Whole Pizza at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+22,Wings OR Cheesy Breadsticks at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+23,Whole Pizza Pie at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+24,Frozen OR Fountain Drink at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+25,Spend $10 in-store at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+26,"Fresh bakery item, select varieties, at Casey's","{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+27,Whole pizza at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+28,12 Pack OR 2 Liter AND Whole Pizza at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+29,Frozen OR Fountain Drink at Casey's ,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+30,Visit OR order online from Casey's 3 times,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+31,Visit OR order online from Casey's 5 times,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+32,12 pack OR 2 liter AND Whole Pizza at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+33,Whole Pizza at Casey's ,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+34,"Fresh Bakery Products at Casey's, select varieties","{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+35,Spend $10 on Casey's branded packaged products,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+36,2 Pack OR 2 Liter AND Whole Pizza at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+37,Select Beverages AND Prepared Food Item at Casey's,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+38,"Fresh Bakery items, select varieties, at Casey's","{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+39,Spend $5 on brisket mac & cheese sandwich OR other single-serve prepared food item,"{'Frozen Pizza & Pizza Snacks', 'Cooking & Baking'}"
+40,Any Vons receipt,{'Spirits'}
+41,Spend $150 at Vons,{'Spirits'}
+42,Spend $100 at Vons,{'Spirits'}
+43,Spend $275 at Vons,{'Spirits'}
+44,Shop 2 times at Vons,{'Spirits'}
+45,Any Albertsons receipt,{'Candy'}
+46,Shop 2 times at Albertsons,{'Candy'}
+47,Spend $65 at Albertsons,{'Candy'}
+48,Spend $110 at Albertsons,{'Candy'}
+49,Spend $220 at Albertsons,{'Candy'}
+50,Sign up for The Club Card or The Club+ Card full-priced membership* (New Members Only),{'Cooking & Baking'}
+51,Shop 2 times at Safeway,{'Candy'}
+52,Spend $210 at Safeway,{'Candy'}
+53,Any Safeway receipt,{'Candy'}
+54,Spend $115 at Safeway,{'Candy'}
+55,Spend $90 at Safeway,{'Candy'}
+56,Spend $60 at TGI Friday's,"{'Spirits', 'Malt Beverages'}"
+57,Spend $35 at TGI Friday's,"{'Spirits', 'Malt Beverages'}"
+58,Spend $45 at TGI Friday's,"{'Spirits', 'Malt Beverages'}"
+59,Spend $25 at TGI Friday's,"{'Spirits', 'Malt Beverages'}"
+60,Spend $155 at Pavilions,{'Cooking & Baking'}
+61,Shop 2 times at Pavilions,{'Cooking & Baking'}
+62,Spend $100 at Pavilions,{'Cooking & Baking'}
+63,Any Pavilions receipt,{'Cooking & Baking'}
+64,Spend $270 at Pavilions,{'Cooking & Baking'}
+65,Spend $90 at Star Market,{'Cooking & Baking'}
+66,Shop 2 times at Star Market,{'Cooking & Baking'}
+67,Spend $120 at Star Market,{'Cooking & Baking'}
+68,Spend $220 at Star Market,{'Cooking & Baking'}
+69,Any Star Market receipt,{'Cooking & Baking'}
+70,Blue Apron Meal Kits,{'Cooking & Baking'}
+71,"Sign up for McAlister's Deli Rewards, tap for details","{'Packaged Fruit & Applesauce', 'Leafy Salads', 'Frozen Meals', 'Soup & Broth', 'Water', 'Bread', 'Frozen Turkey', 'Cheese', 'Coffee', 'Cooking & Baking', 'Fruit Juices', 'Fruit & Vegetable Snacks', 'Milk', 'Dips & Salsa', 'Packaged Meals & Sides', 'Chips', 'Dressings', 'Sauces & Marinades', 'Prepared Meals', 'Pasta & Noodles', 'Cookies', 'Tea', 'Wine', 'Carbonated Soft Drinks', 'Candy', 'Frozen Chicken', 'Bakery', 'Pickled Goods'}"
+72,Spend $10 at CVS,"{'Skin Care', 'Medicines & Treatments', 'Cooking & Baking', 'Fruit Juices'}"
+73,Spend $30 at CVS,"{'Skin Care', 'Medicines & Treatments', 'Cooking & Baking', 'Fruit Juices'}"
+74,Spend $15 at Burger King,{'Cooking & Baking'}
