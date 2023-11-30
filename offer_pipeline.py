@@ -3,10 +3,11 @@ from transformers import pipeline
 import pickle
 import os
 import pandas as pd
-import seaborn as sns
+# import seaborn as sns
 import ast
 import string
 import re
+from sentence_transformers import SentenceTransformer, util
 
 st.set_page_config(
 	page_title="Offer Recommender",
@@ -14,6 +15,8 @@ st.set_page_config(
 )
 
 pipe = pipeline(task="zero-shot-classification", model="facebook/bart-large-mnli")
+model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+
 dire = "DS_NLP_search_data"
 
 @st.cache_data
@@ -40,35 +43,6 @@ def get_categories(cats_):
 			categories.remove(x)
 	return categories
 
-def get_confidence_charts(results):
-	df = (
-		pd.DataFrame({"Category": results["labels"], "probability": results["scores"]})
-		.sort_values(by="probability", ascending=False)
-		.reset_index(drop=True)
-	)
-
-	df.index += 1
-
-	# Add styling
-	cmGreen = sns.light_palette("blue", as_cmap=True)
-	cmRed = sns.light_palette("red", as_cmap=True)
-	df = df.style.background_gradient(
-		cmap=cmGreen,
-		subset=[
-			"probability",
-		],
-	)
-
-
-	format_dictionary = {
-		"Score": "{:.1%}",
-	}
-
-	df = df.format(format_dictionary)
-
-	return df
-
-
 def check_in_offer(search_str, offer_rets):
 	offers = []
 	# print(offer_rets)
@@ -92,31 +66,6 @@ def is_retailer(search_str, threshold=0.5):
 
 	return labels["labels"][0] == "retailer" and labels["scores"][0] > threshold
 
-@st.cache
-def get_prod_categories():
-	retail_mapping = {}
-	for retailer in list(offer_rets["RETAILER"].unique()):
-		query_direct_retail = complete_df[complete_df["RETAILER"] == retailer]
-		prod_cats = query_direct_retail["PRODUCT_CATEGORY"].unique()
-		retail_mapping[retailer] = prod_cats
-	return retail_mapping
-
-
-def get_most_overlap(retailer, offer_rets, retail_mapping, top_n=3):
-	overlaps = {}
-
-	for key, value in retail_mapping.items():
-		if key != retailer.upper():
-			overlap = set(value).intersection(set(retail_mapping[retailer.upper()]))
-			overlaps[key] = len(overlap)
-
-	sorted_overlaps = dict(sorted(overlaps.items(), key=lambda x:x[1], reverse=True))
-
-	related_retailers =  list({k:sorted_overlaps[k] for k in list(sorted_overlaps)[:top_n]}.keys())
-	offers = list(offer_rets[offer_rets["RETAILER"].isin(related_retailers)]["OFFER"])
-	df = pd.DataFrame({"OFFERS": offers})
-	return df
-
 def perform_cat_inference(search_str, categories, cats, processed_offers):
 	labels = pipe(search_str,
 		candidate_labels=categories,
@@ -137,6 +86,20 @@ def perform_cat_inference(search_str, categories, cats, processed_offers):
 
 	return offers, labels, labels_2
 
+def sort_by_similarity(search_str, related_offers):
+	temp_dict = {}
+	embedding_1 = model.encode(search_str, convert_to_tensor=True)
+
+	for offer in list(related_offers["OFFER"]):
+		embedding_2 = model.encode(offer, convert_to_tensor=True)
+
+		temp_dict[offer] = float(util.pytorch_cos_sim(embedding_1, embedding_2))
+
+	sorted_dict = dict(sorted(temp_dict.items(), key=lambda x : x[1], reverse=True))
+	# casted_scores = list(map(lambda x : int(x), ))
+	df = pd.DataFrame({"OFFER":list(sorted_dict.keys())[:20], "scores":list(sorted_dict.values())[:20]})
+	return df
+
 def main():
 	col_1, col_2, col_3 = st.columns(3)
 	search_str = col_2.text_input("Enter a retailer, brand, or category").capitalize()
@@ -149,21 +112,25 @@ def main():
 	if col_2.button("Search", type="primary"):
 		retail = is_retailer(search_str)
 		direct_offers = check_in_offer(search_str, offer_rets)
+		col_2.write("Directly related offers")
+		col_2.table(direct_offers)
 
 		if retail:
-			col_2.table(direct_offers)
-			# related_offers = get_most_overlap(retailer, offer_rets, retail_mapping, top_n=3)
-			# col_2.table(related_offers[~related_offers["OFFER"].isin(list(direct_offers["OFFER"]))])
-
+			related_offers = offer_rets[~offer_rets["OFFER"].isin(list(direct_offers["OFFER"]))]
 		else:
-			col_2.table(direct_offers)
 			related_offers, labels_1, labels_2 = perform_cat_inference(search_str, categories, cats, processed_offers) 
-			
-			col_2.table(related_offers[~related_offers["OFFER"].isin(list(direct_offers["OFFER"]))])
+			related_offers = related_offers[~related_offers["OFFER"].isin(list(direct_offers["OFFER"]))]
+
 			col_2.table(pd.DataFrame({"labels": labels_1["labels"][:5], "scores": labels_1["scores"][:5]}))
 			col_2.table(pd.DataFrame({"labels": labels_2["labels"][:5], "scores": labels_2["scores"][:5]}))
+
+
 			# df = get_confidence_charts(labels_2)
 			# st.table(df)
+		
+		col_2.write("Other related offers")
+		sorted_offers = sort_by_similarity(search_str, related_offers)
+		col_2.table(sorted_offers)
 if __name__ == "__main__":
 
 	main()

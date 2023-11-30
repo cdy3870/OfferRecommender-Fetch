@@ -9,19 +9,21 @@ To solve this problem, I first broke it down into its simplest form and determin
     * We iterate through each of these offers and categorize it according to its most likely labels (> 0.20 probability)
 3. We then concatenate that these tables so that we have a list of offers with its corresponding categor(ies)
 
-After this processing, we perform the following control flow logic using the same zero-shot learning model.
+After this processing, we perform the following control flow logic using the same zero-shot learning model and a sentence embedding model.
 
 ## Pipeline
 1. Search for the text input directly in the offer and return this list of offers
 2. Determine if the text input is highly likely to be a retailer, otherwise default to brand/category inference
     * We use the zero shot learning model with the labels "brand", "retailer", "category". If there is a > 0.40 score of it being a retailer. Then we continue as follows:
-    * Create a mapping of all the categories that a retailer falls under
-    * Find the retailers that have the most overlap in the types of goods sold
-3. If not highly likely to be a retailer, then we continue with brand/category inference
+    * Extract a sentence embedding using a pre-trained embedding model for each offer and compare with the retailer text input, sort and take the top 20
+    * Something that I didn't do but could have added is to first find other retailers that have a high overlap with types of goods sold, then we narrow the search down before comparing with each offer
+
+3. If not highly likely to be a retailer, then we continue with brand/category inference. The rationale behind this separation is that we can leverage the human-labeled categories that help us have a more refined search when provided a brand or category. The same doesn't really apply for retailers that a have broad range of categories. 
     * We classify the text as one of the 22 parent categories using the zero-shot learning model
     * We filter based on the ones that have greater than 0.20 score
     * We find the child categories that are associated with this filtered list of parent categories
     * We classify the text again according to this reduced set of child categories
+    * Extract a sentence embedding using a pre-trained embedding model for each offer and compare with the retailer text input, sort and take the top 20 
 4. Return the corresponding offers
 
 ## Assumptions and tradeoffs
