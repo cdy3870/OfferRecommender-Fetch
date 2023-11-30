@@ -43,7 +43,7 @@ After this processing, we perform the following control flow logic using the sam
 I believe this pipeline would work much better if there were more offers associated with the provided categories. For example, if we use "Huggies" as our input, we see that the model correctly finds the subcategories, "Diapering", "Potty Training", and "Baby Safety", but there are no offers that are associated with the brands of these categories. Therefore, it defaults to other categories that aren't super relevant.
 
 ## Requirements and Instructions
-This app is hosted on HuggingFace Spaces: . It takes a minute to load both the models but is cached afterwards. Unfortunately the free cpu they provide is quite slow for inferencing so I would suggest running locally. Inferencing is still a bit slow locally but is obviously device independent. If hosted on services where a GPU is enabled, the app would be much more efficient.
+This app is hosted on HuggingFace Spaces: https://huggingface.co/spaces/cdy3870/Fetch_App. It takes a minute to load both the models but is cached afterwards. Unfortunately the free cpu they provide is quite slow for inferencing so I would suggest running locally. Inferencing is still a bit slow locally but is obviously device independent. If hosted on services where a GPU is enabled, the app would be much more efficient.
 
 1. Install the requirements in a virtual environment
 
