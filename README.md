@@ -29,3 +29,19 @@ One assumption made is that the user will not try to fool the system by using st
 
 
 ## Requirements and Instructions
+I did not host this website because of the implications of hosting the huggingface model as well. However, this model can be hosted with something like sagemaker. Therefore, the instructions below indicate how to run the Streamlit app locally.
+
+1. Install the requirements in a virtual environment
+
+```
+pip install -r requirements.txt
+```
+
+
+2. Run the following command
+
+```
+streamlit run offer_pipeline.py
+```
+
+3. The HuggingFace model takes a minute to download, but it is cached after downloading. 
