@@ -26,12 +26,21 @@ After this processing, we perform the following control flow logic using the sam
     * Extract a sentence embedding using a pre-trained embedding model for each offer and compare with the retailer text input, sort and take the top 20 
 4. Return the corresponding offers
 
-## Assumptions and tradeoffs
-One assumption made is that the user will not try to fool the system by using strings that are not real words, contain numbers, or are sentences. Although the model is still probabilistic and will output something that it thinks it is closest to. Allowing for open-ended inputs is a tradeoff of flexibility over more refined results. By not keeping a specific set of brands or categories that is only found in the data, we can allow the model to generalize. Another tradeoff I made is to remove the need for the user to specify if the input is a retailer, brand, or category. If this is specified, then the search can be refined and we also may not accidentally misclassify something as a retailer or not a retailer. However, again we obtain flexibility and generalization this way. Using terms like "beef" and "steak" may lead to similar offers, but may not be actually found in the data. 
+## Assumptions
+1. One assumption made is that the user will not try to fool the system by using strings that are not real words, contain numbers, or are sentences. Although the model is still probabilistic and will output something that it thinks it is closest to. 
+
+2. Another assumption is that we only need to provide the offer and not the corresponding retailer and brand. For example, one offer may be present for multiple brands or categories so it would ideally appear for both. However, I made the assumption that we only care about relationship between the offer and the text input.  
+
+## Tradeoffs
+1. Allowing for open-ended inputs is a tradeoff of flexibility over more refined results. By not keeping a specific set of brands or categories that is only found in the data, we can allow the model to generalize. 
+
+2. Another tradeoff I made is to remove the need for the user to specify if the input is a retailer, brand, or category. If this is specified, then the search can be refined and we also may not accidentally misclassify something as a retailer or not a retailer. However, again we obtain flexibility and generalization this way. Using terms like "beef" and "steak" may lead to similar offers, but may not be actually found in the data. 
+
+3. Lastly, I made the tradeoff of speed over performance in the case of using a smaller zero-shot learning model. The performance difference is negligble from online research that performed various experiments on zero-shot learning models. 
 
 
 ## Requirements and Instructions
-I did not host this website because of the implications of hosting the huggingface model as well. However, this model can be hosted with something like sagemaker. Therefore, the instructions below indicate how to run the Streamlit app locally.
+This app is hosted on HuggingFace Spaces: . It takes a minute to load both the models but is cached afterwards. Unfortunately the free cpu they provide is quite slow for inferencing so I would suggest running locally. Inferencing is still a bit slow locally but is obviously device independent. If hosted on services where a GPU is enabled, the app would be much more efficient.
 
 1. Install the requirements in a virtual environment
 
@@ -46,4 +55,4 @@ pip install -r requirements.txt
 streamlit run offer_pipeline.py
 ```
 
-3. The HuggingFace model takes a minute to download, but it is cached after downloading. 
+3. The HuggingFace models take a minute to download, but it is cached after downloading. 
