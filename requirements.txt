@@ -1,6 +1,5 @@
 streamlit
 transformers
 pandas
-seaborn
 torch
 sentence-transformers
