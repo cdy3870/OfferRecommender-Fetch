@@ -59,3 +59,5 @@ streamlit run offer_pipeline.py
 ```
 
 3. The HuggingFace models take a minute to download, but it is cached after downloading. 
+
+4. Enter in a term (pepsi, target, gummy bears for example). The enter button is not implemented so you need to press the search button. 
